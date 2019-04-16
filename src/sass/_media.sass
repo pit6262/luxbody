@@ -1,0 +1,321 @@
+/* 7. MEDIA
+/* ================================================ */
+
++max-screen(1250px)
+	.wrapper 
+		padding-left: 3rem
+		padding-right: 3rem
+	.navbar-menu__item
+		margin-right: 1.6rem
+	.navbar-menu__link
+		font-size: 1.4rem
+
+	.service-group__block	
+		max-width: 50rem
+
+	.block-text
+		padding-right: 29rem
+
+	.form-wrap
+		margin-right: -3rem
+		padding-right: 3rem
+
+	.banner-middle__left
+		width: 70%
+		
+	.banner-middle__right
+		width: 30%
+		
+	.contacts-wrap__item
+		padding: 2rem 3rem
+
+	.contacts-wrap__list
+		font-size: 1.6rem
+
++max-screen(992px)
+	.wrapper 
+		padding-left: 2rem
+		padding-right: 2rem
+	.navbar 
+		display: none
+		margin-left: -2rem
+		margin-right: -2rem
+		&.open 
+			display: block
+			
+		&-menu 
+			display: block
+			&__item 
+				margin-right: 0
+				border-top: .1rem solid #f0f5f5
+			&__link
+				padding: .8rem 2rem
+				font-size: 1.6rem
+				&:after 
+					display: none
+				&.active 
+					font-weight: 400
+					color: #533b4c
+
+	.toggle-menu
+		display: block
+		height: 5rem
+		width: 5rem
+		margin-left: -1.2rem
+		background-color: transparent
+		border: none
+		padding: 0
+		span 
+			display: block
+			width: 2.7rem
+			height: 0.3rem
+			margin: 0 auto
+			background-color: #d088d0
+			& + span 
+				margin-top: .5rem
+					
+
+	.service-group__block
+		max-width: 41.1rem
+
+	.service-group__banner--left
+		background-position: -66px center
+
+	.service-group__banner--right
+		background-position: 80px center
+
+	.form-box
+		max-width: 41.1rem
+	.form-wrap
+		background-position: right -143px top
+
+	.banner-middle__left
+		flex: 1
+		min-width: 1px
+		width: auto
+		
+	.banner-middle__right 
+		flex: none 
+		width: auto
+		
+	.banner-middle p
+		font-size: 1.8rem
+
+	.sec-form
+		padding: 4rem 0
+
+	.news-list
+		&__img
+			width: 25.4rem	
+			height: 16.3rem
+		&__title 
+			margin-bottom: 1.2rem
+	.news-list__content p
+		max-height: 6rem
+
+	.row-wrap
+		display: block
+		
+		&__left 
+			width: auto
+		&__right
+			width: auto
+			padding-left: 0
+			min-width: 1px
+
+	.sec-contacts
+		padding-bottom: 4rem
+
+	.contacts-wrap
+		justify-content: center
+		&__item
+			width: 50rem
+			margin-bottom: 4rem
+			&:last-child 
+				margin-bottom: 0
+
+		&__icon 
+			justify-content: flex-end
+
+	#map 
+		height: 31.3rem
++max-screen(767px)
+	.mw-wrapper
+		+mw
+
+	.bread-crambs
+		margin-bottom: 2rem
+	.bread-crambs__item
+		margin-top: 1.2rem 
+		margin-bottom: 1rem
+
+	.banner__title
+		font-size: 3.8rem
+	.banner__content p
+		max-width: 30rem
+
+	.block-text
+		padding-right: 0
+		margin-right: -2rem
+		padding-right: 2rem
+		background-position: right -60px center 
+
+	.service-group
+		margin-left: -4rem
+		margin-right: -4rem
+		margin-bottom: 4rem
+		&__block
+			max-width: 67%
+			min-width: 25rem
+			&-content
+				padding-left: 2.5rem
+				padding-right: 2.5rem
+		&__banner--left
+			background-position: -100px center
+
+	.service-list
+		justify-content: flex-start
+		&__item
+			width: 50%
+
+		&__link
+			width: auto
+
+	.form-wrap
+		background: none
+		
+	.form-box
+		max-width: 100%
+
+	.banner-middle
+		display: block
+		text-align: center
+		background-size: auto 100%
+		background-position: -300px top
+		&__left 
+			padding-right: 0
+			text-align: center
+			&:after 
+				display: none
+		&__right 
+			padding-left: 0
+				
+		
+	.sec-form
+		padding-bottom: 3rem
+
+	.news-list
+		margin-left: -2rem
+		margin-right: -2rem
+		&__item 	
+			border-radius: 0
+		&__img
+			width: 20.2rem
+
+	.article
+		&__row
+			display: block
+		&__content
+			width: auto
+		&__img 	
+			width: auto
+			padding-left: 0
+			min-width: 1px
+	
+	.video
+
+		height: 30rem
+		&-cont 
+			+coverdiv
+			overflow: hidden
+			border-radius: 1rem
+		img 
+			+coverdiv
+			height: 100%
+			max-width: none
+			width: auto
+			left: 50%
+			border-radius: 1rem
+			transform: translate(-50%, 0)
+			
+			
+
+
+	.sec-contacts
+		padding-top: 3rem
+
+	.contacts-wrap__item
+		padding-left: 2rem
+		padding-right: 0
+
+	
+		
++max-screen(479px)
+	.contacts-wrap
+		&__item
+			width: 100%
+			padding-left: 0
+			margin-bottom: 2rem
+		&__icon
+			padding-right: 2rem
+			width: 10rem
+		&__content
+			padding-top: 0
+			padding-bottom: 0
+			padding-left: 2rem
+			padding-right: 0
+		&__title
+			font-size: 1.6rem
+		&__list
+			font-size: 1.4rem
+
+	.news-list
+		
+		&__item 	
+			display: block
+			
+		&__img
+			width: auto
+			margin-right: 0
+			height: 20rem
+			margin-bottom: 2rem
+
+		&__title
+			overflow: visible
+			white-space: normal
++max-screen(370px)
+	.wrapper 
+		padding-left: 1.5rem
+		padding-right: 1.5rem
+	.banner__title
+		font-size: 2.6rem
+	.banner:not(.banner--page), .banner__wrap
+		height: 35rem
+
+	
+		
+		
+
+	.banner__content p
+		font-size: 1.6rem
+		max-width: 22rem
+
+	.section__title
+		font-size: 2.2rem
+	.service-group__block
+		max-width: 25rem
+		&-content 
+			padding-left: 1.6rem
+			padding-right: 1.6rem
+			padding-top: 2rem
+			padding-bottom: 2rem
+
+	.service-list__link 
+		padding-left: 1.2rem
+		padding-right: 1.2rem
+	.service-list__text
+		font-size: 1.4rem
+
+	.banner-middle
+		padding-left: 1.5rem
+		padding-right: 1.5rem

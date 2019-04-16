@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+	<meta name="format-detection" content="telephone=no">
+	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+	<title>Название проекта - Главная</title>
+	
+	//= template/head.html
+	
+</head>
+<body class="loaded">
+
+
+<!-- BEGIN BODY -->
+<div class="main-wrapper">
+
+	<!-- BEGIN CONTENT -->
+	<main class="main">
+		<label >Обычный label</label>
+		<label class="checkbox">
+			<input type="checkbox">
+			<span class="checkbox__text">label</span>
+		</label>
+
+		<label class="radio">
+			<input type="radio" name="1f">
+			<span class="radio__text">label</span>
+		</label>
+		<label class="radio">
+			<input type="radio" name="1f">
+			<span class="radio__text">label</span>
+		</label>
+
+		<div class="form-field">
+			<input type="text" class="form-input" placeholder="Ваше имя">
+		</div>
+		<div class="form-field">
+			<input type="text" class="form-input" placeholder="Телефон">
+		</div>
+		<div class="form-field">
+			<select class="styler" placeholder="Тема сообщения">
+				<option value="">Тема сообщения</option>
+				<option value="">Тема сообщения</option>
+			</select>
+		</div>
+		<div class="form-field">
+			<textarea  class="form-input" placeholder="Сообщение"></textarea>
+		</div>
+
+		<div>
+			<a href="#" class="btn btn--sm"><span class="btn__g"></span><span class="btn__text">Кнопка</span></a>
+			<a href="#" class="btn"><span class="btn__g"></span><span class="btn__text">Кнопка</span></a>
+			<a href="#" class="btn btn--active"><span class="btn__g"></span><span class="btn__text">Кнопка</span></a>
+			<a href="#" class="btn btn--lg"><span class="btn__g"></span><span class="btn__text">Кнопка</span></a>
+			<a href="#" class="btn btn--lg btn--active"><span class="btn__g"></span><span class="btn__text">Кнопка</span></a>
+			<a href="#" class="btn btn--xl"><span class="btn__g"></span><span class="btn__text">Кнопка</span></a>
+			<a href="#" class="btn btn--xl btn--active"><span class="btn__g"></span><span class="btn__text">Кнопка</span></a>
+			<div style="background: #835272; padding: 1rem;"><a href="#" class="btn btn--default">Кнопка</a></div>
+			
+		</div>
+
+		<h1>Заголовок h1</h1>
+		<h2>Заголовок h2</h2>
+		<h3>Заголовок h3</h3>
+		<h4>Заголовок h4</h4>
+		<h5>Заголовок h5</h5>
+		<h6>Заголовок h5</h6>
+		<p>Обычный текст p</p>
+
+		<ul>
+			<li>маркерованный список</li>
+			<li>маркерованный список</li>
+			<li>маркерованный список</li>
+		</ul>
+		<ol>
+			<li>нумерованный список</li>
+			<li>нумерованный список</li>
+			<li>нумерованный список</li>
+		</ol>	
+	</main>
+	<!-- CONTENT EOF   -->
+
+</div>
+<!-- BODY EOF   -->
+
+
+<div class="icon-load"></div>
+
+//= template/foot.html
+
+
+</body>
+</html>

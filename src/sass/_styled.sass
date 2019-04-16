@@ -1,0 +1,173 @@
+/* ==========================
+ *     FORM STYLER
+ * ========================*/ 
+
+
+// File
+.jq-file
+    border-radius: 5px
+    cursor: pointer
+    input
+        height: 100%
+        line-height: 1em
+        cursor: pointer
+    &.form-control 
+        border: none !important
+        padding: 0 !important
+
+    &__name
+        overflow: hidden
+        box-sizing: border-box
+        width: 100%
+        height: 40px
+        padding: 0 80px 0 20px
+        border: 1px solid #aaa
+        border-radius: 5px
+        background: #FFF
+        font: 14px/40px Arial, sans-serif
+        color: #444
+        white-space: nowrap
+        text-overflow: ellipsis
+        cursor: pointer
+
+    &__browse
+        position: absolute
+        top: 1px
+        right: 1px
+        padding: 0 18px
+        border-left: 1px solid #aaa
+        border-radius: 0 5px 5px 0
+        background: #F5F5F5
+        font: 14px/38px Arial, sans-serif
+        color: #333
+
+    &:hover .jq-file__browse
+        
+    &:active .jq-file__browse
+        
+    &.focused .jq-file__name
+       
+    &.disabled
+        border-color: #CCC
+        color: #888
+        .jq-file__name, .jq-file__browse
+            border-color: #CCC
+            box-shadow: none
+            color: #888
+
+
+// Select
+.jq-selectbox
+    vertical-align: middle
+    cursor: pointer
+    width: 100%
+    &__select
+        height: 5.3rem
+        padding: 0 50px 0 2rem
+        border: none
+        border-radius: .3rem
+        background: #f7f7f7
+        font: 300 1.5rem $font-family, Arial, sans-serif
+        line-height: 53px
+        color: #444
+    &.form-control 
+        width: 100%
+        padding: 0 
+        border: none
+
+    &.disabled .jq-selectbox__select
+        border-color: #CCC
+        background: #F5F5F5
+        box-shadow: none
+        color: #888
+
+    &__select-text
+        display: block
+        overflow: hidden
+        width: 100%
+        white-space: nowrap
+        text-overflow: ellipsis
+
+    .placeholder
+        color: $color
+
+    &__trigger
+        position: absolute
+        top: 0
+        right: 0
+        width: 40px
+        height: 100%
+        background: url('../img/arrow.png') no-repeat center
+
+
+        
+
+    &:hover .jq-selectbox__trigger-arrow
+        border-top-color: #000
+    &.disabled .jq-selectbox__trigger-arrow
+        border-top-color: #AAA
+
+    &__dropdown
+        box-sizing: border-box
+        width: 100%
+        padding: 0
+        margin-top: 2px
+        border-radius: 3px
+        background: #f7f7f7
+        font: 300 1.5rem $font-family, Arial, sans-serif
+        box-shadow: 1px 1px 6px #999
+ 
+    &__search
+        margin: 5px
+        input
+            box-sizing: border-box
+            width: 100%
+            margin: 0
+            padding: 5px 27px 6px 8px
+            border: 1px solid #CCC
+            border-radius: 3px
+            outline: none
+            background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABQAAAAMCAYAAABiDJ37AAAAGXRFWHRTb2Z0d2FyZQBBZG9iZSBJbWFnZVJlYWR5ccllPAAAAO1JREFUeNqU078LAXEYx/FzYfNzk5TJaFNKYjFYSQZ/hvwBsvg1UCY2xT9gM8hukQGThWRjkcFw3pdnujhfT736Xn2fPvfc3fd07V0OFDDFAnM0ENYsZRiGLSc9OpqIYIA9fMhhjCrW2h9VlMlcH/aymMGtOqEugX08PwQucUZKdTozMIqdTc9WepQD7wjY9ARx+ydwhfyXfS+S0qMcOEQJGcueB3VccFINdMgal6NzkmPjRwJXxDBB7/2RDdtAp6wb+dpphHDASG5QQ0V6u2aoSqBZD/lDrNWRJynLK2qpBn4rc6K2XB9/Nb8EGABtf1thzY6X2AAAAABJRU5ErkJggg==) no-repeat 100% 50%
+            box-shadow: inset 1px 1px #F1F1F1
+            color: #333
+            -webkit-appearance: textfield
+            &::-webkit-search-cancel-button, &::-webkit-search-decoration
+                -webkit-appearance: none
+
+    &__not-found
+        margin: 5px
+        padding: 5px 8px 6px
+        background: #F0F0F0
+        font-size: 13px
+
+    ul
+        margin: 0 !important
+        padding: 0 !important
+    li
+        min-height: 18px
+        margin: 0 !important
+        padding: 5px 10px 6px
+        -webkit-user-select: none
+        -moz-user-select: none
+        -ms-user-select: none
+        user-select: none
+        white-space: nowrap
+        color: #231F20
+        &.selected
+            background-color: #be89ff
+            color: #FFF
+        &:hover
+            
+            background-color: #be89ff
+            color: #FFF
+        &.disabled
+            color: #AAA
+        &.optgroup
+            font-weight: bold
+            &:hover
+                background: none
+                color: #231F20
+                cursor: default
+        &.option
+            padding-left: 25px
+
