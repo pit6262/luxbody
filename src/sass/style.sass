@@ -31,9 +31,10 @@ body
 	height: 1em
 	stroke-width: 0
 	stroke: currentColor
-	fill: currentColor
+	fill: url(#my-cool-gradient)
 	transition: all 0.3s linear
 	position: relative
+	
 
 
 .ic
@@ -565,8 +566,12 @@ label
 				border-left: .1rem solid #c18bf9 
 				border-bottom: .1rem solid #f3b273
 				border-right: .1rem solid #f3b273
-			.ic 
-				background-position: 0 bottom
+			// .ic 
+			// 	background-position: 0 bottom
+
+			.icon 
+				color: #fff
+				fill: #fff
 	&__link 
 		width: 19rem
 		height: 13rem
@@ -589,14 +594,19 @@ label
 			border-left: .1rem solid #c18bf9
 			border-bottom: .1rem solid #f3b273
 			border-right: .1rem solid #f3b273
-			.ic 
-				background-position: 0 bottom
+			// .ic 
+			// 	background-position: 0 bottom
+			.icon 
+				color: #fff
+				fill: #fff
 	&__icon 
 		height: 5.2rem
 		display: flex
 		align-items: center
 		justify-content: center
 		margin-bottom: .5rem
+		.icon 
+			font-size: 4.5rem
 	&__text 
 		font-size: 1.6rem
 		line-height: 1.2

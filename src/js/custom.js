@@ -30,9 +30,9 @@ $(function(){
 		$(id).removeClass('hide');
 		$(this).parent().addClass('active');
 
-    var target = $(this).attr('href'),
-            bl_top = $(target).offset().top -30;
-    $('body,html').animate({scrollTop: bl_top}, 900);
+   
+    var bl_top = $(id).offset().top -30;
+    $('body,html').animate({scrollTop: bl_top}, 300);
    
 		return false
 	});
