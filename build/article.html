@@ -108,64 +108,108 @@
 	</svg>
 	
 	<header class="header">
-		<div class="wrapper">
-			
-			<button class="toggle-menu open-menu">
-				<span></span>
-				<span></span>
-				<span></span>
-			</button>
-			<nav class="navbar">
-				<ul class="navbar-menu">
-					<li class="navbar-menu__item ">
-						<a href="#" class="navbar-menu__link active">О нас</a>
-					</li>
-					<li class="navbar-menu__item">
-						<a href="#" class="navbar-menu__link">Новости</a>
-					</li>
-					<li class="navbar-menu__item">
-						<a href="#" class="navbar-menu__link">Отзывы</a>
-					</li>
-					<li class="navbar-menu__item">
-						<a href="#" class="navbar-menu__link">Контакты</a>
-					</li>
-				</ul>
+		<div class="header-top">
+			<div class="wrapper">
+				<div class="header__wrap">
+					
+					<button class="toggle-menu open-menu">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+					<div class="logo">
+						<a href="#"><img src="img/logo.svg" alt=""></a>
+					</div>
+					<nav class="navbar">
+						<ul class="navbar-menu">
+							<li class="navbar-menu__item active">
+								<a href="#" class="navbar-menu__link ">О нас</a>
+							</li>
+							<li class="navbar-menu__item">
+								<a href="#" class="navbar-menu__link">Новости</a>
+							</li>
+							<li class="navbar-menu__item">
+								<a href="#" class="navbar-menu__link">Отзывы</a>
+							</li>
+							<li class="navbar-menu__item">
+								<a href="#" class="navbar-menu__link">Контакты</a>
+							</li>
+						</ul>
 	
-				<ul class="navbar-menu">
-					<li class="navbar-menu__item">
-						<a href="#" class="navbar-menu__link">Преимущества</a>
-					</li>
-					<li class="navbar-menu__item">
-						<a href="#" class="navbar-menu__link">Спектр лечения</a>
-					</li>
-					<li class="navbar-menu__item">
-						<a href="#" class="navbar-menu__link">Удаление татуировок</a>
-					</li>
-					<li class="navbar-menu__item">
-						<a href="#" class="navbar-menu__link">Отбеливание зубов</a>
-					</li>
-					<li class="navbar-menu__item">
-						<a href="#" class="navbar-menu__link">Фотогалерея</a>
-					</li>
+						<ul class="navbar-menu">
+							<li class="navbar-menu__item hd-hidden">
+								<a href="#" class="navbar-menu__link">Преимущества</a>
+							</li>
+							<li class="navbar-menu__item hd-hidden">
+								<a href="#" class="navbar-menu__link">Спектр лечения</a>
+								<ul class="navbar-dropdown">
+									<li class="navbar-dropdown__item ">
+										<a href="#" class="navbar-dropdown__link">Мезотерапия</a>
+									</li>
+									<li class="navbar-dropdown__item ">
+										<a href="#" class="navbar-dropdown__link">Ионный лифтинг</a>
+									</li>
+									
+								</ul>
+							</li>
+							<li class="navbar-menu__item hd-hidden">
+								<a href="#" class="navbar-menu__link">Удаление татуировок</a>
+							</li>
+							<li class="navbar-menu__item hd-hidden">
+								<a href="#" class="navbar-menu__link">Отбеливание зубов</a>
+							</li>
+							<li class="navbar-menu__item hd-visible">
+								<a href="#" class="navbar-menu__link">Услуги</a>
+								<ul class="navbar-dropdown navbar-dropdown--left">
+									<li class="navbar-dropdown__item ">
+										<a href="#" class="navbar-dropdown__link">Преимущества</a>
+									</li>
+									<li class="navbar-dropdown__item ">
+										<a href="#" class="navbar-dropdown__link">Спектр лечения</a>
+										<ul class="navbar-dropdown navbar-dropdown--left">
+											<li class="navbar-dropdown__item ">
+												<a href="#" class="navbar-dropdown__link">Мезотерапия</a>
+											</li>
+											<li class="navbar-dropdown__item ">
+												<a href="#" class="navbar-dropdown__link">Ионный лифтинг</a>
+											</li>
+											
+										</ul>
+									</li>
+									<li class="navbar-dropdown__item ">
+										<a href="#" class="navbar-dropdown__link">Удаление татуировок</a>
+									</li>
+									<li class="navbar-dropdown__item ">
+										<a href="#" class="navbar-dropdown__link">Отбеливание зубов</a>
+									</li>
+								</ul>
+							</li>
+							<li class="navbar-menu__item">
+								<a href="#" class="navbar-menu__link">Фотогалерея</a>
+							</li>
 	
-				</ul>
-			</nav>
-			
+						</ul>
+					</nav>
+				</div>	
+			</div>
 		</div>
+	
+	
+		<div class="banner banner--page" style="background-image: url('img/banner-page.png');">
+			<div class="wrapper">
+				<div class="banner__wrap">
+					
+					<div class="logo"><a href="#"><img src="img/logo.svg" alt=""></a></div>
+					
+				</div>
+			</div>
+		</div>
+		
 	</header>
 	<!-- HEADER EOF   -->
 
 	<!-- BEGIN CONTENT -->
-	<main class="main">
-		<div class="banner banner--page" style="background-image: url('img/banner-page.png');">
-			<div class="wrapper">
-				<div class="banner__wrap">
-					<div class="banner__content">
-						<div class="logo"><a href="#"><img src="img/logo.svg" alt=""></a></div>
-					</div>
-				</div>
-			</div>
-		</div>
+	<main class="main" id="main">
 
 		<div class="wrapper">
 			
