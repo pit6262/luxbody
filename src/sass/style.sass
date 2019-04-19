@@ -4,6 +4,7 @@
 @import styled
 
 
+
 html 
 	font-size: 62.5%
 
@@ -15,6 +16,7 @@ body
 	line-height: $line-height
 	background: #FFF
 	min-height: 100%
+	
 	display: flex
 
 /* 3. BASE STYLES
@@ -326,25 +328,127 @@ label
 	min-width: 32rem
 	text-align: left
 	flex-shrink: 0
+	padding-top: 7.6rem
+	
+	position: relative
+	
 	background: #fff
+
+			
+	&.header-full
+		min-height: 100vh
+		display: flex
+		padding-bottom: 5rem
+		flex-direction: column
+		align-items: flex-start
+
+	&.sticky
+		
+		.header-top
+			position: fixed
+			border-bottom: .1rem solid hsla(0,0%,59%,.19)
+			.logo
+				display: block
+				
+		.hd-hidden
+			display: none
+		.hd-visible
+			display: block
+		
+			
+	&-top 
+		background: #fff
+		z-index: 999
+		width: 100%
+		position: absolute
+		
+		top: 0
+		left: 0
+		width: 100%
+		.logo
+			width: 18rem
+			margin-left: 0
+			margin-right: 5rem
+			flex: none
+			display: none
+		
+	&__wrap 
+		display: flex
+		align-items: center
+		height: 7.6rem
+	.banner 
+		flex: 1 0 auto
+		width: 100%
+	.wrap-logo 
+		flex: none
+		width: 100%
+		margin-top: 4rem
+		margin-bottom: 4rem
+
+.hd-visible
+	display: none
+	
+.down
+	position: absolute
+	bottom: 0
+	left: 50%
+	transform: translate(-50%, 0)
+	display: block
+	flex: none
+	text-align: center
+	padding-bottom: 2rem
+	padding-top: 1rem
+	&__text
+		font-size: 1.2rem
+		display: block
+
+	&__arrow
+		border-left: .2rem solid $color
+		border-bottom: .2rem solid $color
+		transform: rotate(-45deg) 
+		width: 2rem
+		height: 2rem
+		display: block
+		margin: 0 auto
+		transition: all 0.2s 
+		position: relative
+		top: 0
+	&:hover 
+		.down__arrow
+
+			top: .5rem
+
 		
 
 .navbar
 	display: flex
 	align-items: center
 	justify-content: space-between
+	flex: 1
+	min-width: 1px
 	&-menu 
 		list-style: none
 		display: flex
 		&__item 	
 			margin-right: 2.4rem
+			position: relative
+			
 			&:last-child 
 				margin-right: 0
+			&:hover, &.active
+				.navbar-menu__link:after 
+					
+					width: 75%
+			&:hover 
+				& > .navbar-dropdown
+					display: block
+					
 		&__link 
 			display: block
 			padding: 2.6rem 0
 			font-size: 1.6rem
 			font-weight: 300
+			height: 7.6rem
 			position: relative
 			&:after 
 				content: ''
@@ -357,12 +461,68 @@ label
 				height: .2rem
 				transition: all 0.2s linear
 				background-color: rgba(114, 80, 104, 0.72)
-			&:hover, &.active
-				&:after 
-					
-					width: 75%
-					
+			
 
+.navbar-dropdown
+	list-style: none
+	position: absolute
+	top: 100%
+	left: -2rem
+	display: none
+	
+	min-width: 20rem
+	background: #fff
+	border-left: .1rem solid #f0f5f5
+	border-right: .1rem solid #f0f5f5
+	border-bottom: .1rem solid #f0f5f5
+	&.navbar-dropdown--left
+		left: auto
+		right: -2rem
+	.navbar-dropdown
+		top: -.1rem
+		left: 100%
+		margin-left: .1rem
+		border-left: none
+		border-top: .1rem solid #f0f5f5
+		&--left 
+			left: auto
+			right: 100%
+			margin-right: .1rem
+			margin-left: 0
+			border-right: none
+			border-left: .1rem solid #f0f5f5
+	&__item 
+		border-bottom: .1rem solid #f0f5f5
+		position: relative
+		
+		&:last-child 
+			border-bottom: none
+		&:hover 
+			& > .navbar-dropdown
+				display: block
+				
+			& > .navbar-dropdown__link:after 
+				background-color: rgba(114, 80, 104, 0.72)
+	&__link 
+		display: block
+		padding: 1.5rem 2rem
+		font-size: 1.4rem
+		font-weight: 300
+		position: relative
+		
+		&:after 
+			content: ''
+			display: block
+			position: absolute
+			left: 0
+			top: 50%
+			transform: translate(0, -50%)
+			width: .2rem
+			height: 2.5rem
+			transition: all 0.2s linear
+			
+		
+			
 .toggle-menu
 	display: none
 	
@@ -375,10 +535,29 @@ label
 	flex: 1 1 auto
 
 .banner 
-	background-position: center
-	background-repeat: no-repeat
-	background-size: cover
-	height: 50rem
+	&-slider
+		display: flex !important
+		height: 100%
+		.slick-list, .slick-track
+			display: flex !important
+			height: 100%
+		.slick-slide
+			height: auto !important
+		.slick-dots
+			position: absolute
+			bottom: 3rem
+			left: 0
+			right: 0
+			
+		&__item
+			background-position: center
+			background-repeat: no-repeat
+			background-size: cover
+			display: flex !important
+			align-items: center
+			.wrapper 
+				width: 100%
+			
 	&--page 
 		height: 13.8rem
 
@@ -386,26 +565,25 @@ label
 			height: 13.8rem
 			padding: 2rem 0
 			justify-content: center
+			max-width: none
 		.logo 
 			width: 29.6rem
 			padding-bottom: 0
 	&__wrap
-		height: 50rem
-		padding: 5rem 0 2rem
-		display: flex
-		align-items: center
-		justify-content: flex-start
+		
+		padding: 8rem 0
+		max-width: 60rem
 	&__content
 		p 
 			color: #3f3f3f
 			font-size: 2rem
 			margin-bottom: 2rem
 	&__title 
-		margin-bottom: 2rem
+		margin-bottom: 1rem
 		
 		font-size: 4.4rem
 		font-weight: 900
-		line-height: 2rem
+		line-height: 1
 		text-transform: uppercase
 
 .banner-sidebar
@@ -457,7 +635,7 @@ label
 .logo
 	max-width: 37rem
 	margin: 0 auto
-	padding: 0 0 3rem
+
 
 .section
 	padding: 3.5rem 0
@@ -851,3 +1029,4 @@ label
 
 @import media
 
+@import slick

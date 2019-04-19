@@ -5,10 +5,15 @@
 	.wrapper 
 		padding-left: 3rem
 		padding-right: 3rem
+	.header 
+		padding-top: 7.3rem
+	.header__wrap
+		height: 7.3rem
 	.navbar-menu__item
 		margin-right: 1.6rem
 	.navbar-menu__link
 		font-size: 1.4rem
+		height: 7.3rem
 
 	.service-group__block	
 		max-width: 50rem
@@ -36,10 +41,25 @@
 	.wrapper 
 		padding-left: 2rem
 		padding-right: 2rem
+
+	.header-top
+		.logo 	
+			margin-right: 0
+			margin-left: 2rem
+			width: 15rem
+	.header 
+		padding-top: 6rem
+	.header__wrap 	
+		height: 6rem
 	.navbar 
 		display: none
-		margin-left: -2rem
-		margin-right: -2rem
+
+		position: absolute
+		top: 6rem
+		left: 0 
+		width: 100%
+		background: #fff
+		border-bottom: .1rem solid #f0f5f5
 		&.open 
 			display: block
 			
@@ -51,12 +71,30 @@
 			&__link
 				padding: .8rem 2rem
 				font-size: 1.6rem
+				height: auto
+				
 				&:after 
 					display: none
 				&.active 
 					font-weight: 400
 					color: #533b4c
 
+	.navbar-dropdown
+		display: block
+		position: static
+		border: none
+		margin: 0
+		border-top: .1rem solid #f0f5f5
+		&__link 
+	
+			padding: .8rem 2rem .8rem 4rem
+			&:after 
+				display: none
+
+	.header.sticky .hd-hidden
+		display: block
+	.header.sticky .hd-visible
+		display: none
 	.toggle-menu
 		display: block
 		height: 5rem
@@ -149,6 +187,11 @@
 		margin-top: 1.2rem 
 		margin-bottom: 1rem
 
+	.banner-slider
+		.slick-dots 
+			bottom: 1rem
+	.banner__wrap 
+		padding: 6rem 0
 	.banner__title
 		font-size: 3.8rem
 	.banner__content p
@@ -289,8 +332,7 @@
 		padding-right: 1.5rem
 	.banner__title
 		font-size: 2.6rem
-	.banner:not(.banner--page), .banner__wrap
-		height: 35rem
+	
 
 	
 		
