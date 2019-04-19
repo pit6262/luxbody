@@ -99,8 +99,8 @@ if($('#map').length){
 
 $(document).scroll(function () {
     //stick nav to top of page
-    var y = $(this).scrollTop() -20;
-    var header = $('#main').offset().top;
+    var y = $(this).scrollTop() ;
+    var header = $('#main').offset().top -40;
     if (y > header) {
         $('.header').addClass('sticky');
     } else {
